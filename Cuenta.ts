@@ -5,12 +5,12 @@ let valorRetirado: number
 export default class Cuenta {
     titular: string
     valorActual: number
-    valorIngresado: number
+
 
     constructor(titular: string, valorActual: number) {
         this.titular = titular
         this.valorActual = valorActual
-        this.valorIngresado = 0
+
     }
 
     setTitular(titular: string) { this.titular = titular }
@@ -22,38 +22,44 @@ export default class Cuenta {
     // OTROS METODOS
 
     mostrar() {
-        let x = ["titular", this.titular,
-        "Valor disponible", this.valorActual]
+        let x = console.log(["titular", this.titular,
+            "Valor disponible", this.valorActual])
         return x
     }
+
+    
 
     ingresar(valorIngresar: number) {
 
         if (valorIngresar >= 0) {
 
-            valorNuevo = this.valorActual + valorIngresar
-            this.valorIngresado = valorIngresar
-            let x = console.log("valor con ingreso: ", valorNuevo)
-            return  x
+            this.valorActual = this.valorActual + valorIngresar
+
+            let x = console.log("valor con ingreso: ", this.valorActual)
+            return x
 
         } else if (valorIngresar < 0) {
             return "No se puede hacer el ingreso de dinero"
         } else {
             return "Erro al hacer el ingreso"
         }
-        
+
     }
 
-     retirar(valorRetirar: number) {
-        valorRetirado = valorRetirar - valorNuevo ;
+    retirar(valorRetirar: number) {
+
         let answer = console.log(['valor inicial: ', this.valorActual,
-        'valor ingresado: ', this.valorIngresado,
-        'valor Actual: ', valorRetirado])
+            'valor ingresado: ', valorRetirar,
+            'valor Actual: ', this.valorActual - valorRetirar])
+
+        this.valorActual = this.valorActual - valorRetirar
+
         return answer
-    } 
-    
+    }
+
 
 }
+
 
 
 

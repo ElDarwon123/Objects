@@ -67,7 +67,7 @@ readLine.question('Deseas hacer un ingreso o un retiro?  ( ingreso / retiro ): '
                 cuenta1.mostrar()
                 readLine.close();
             })
-            break
+            
         }
         case answer === 'retiro': {
             readLine.question('Que monto desea retirar?: ', (Retirado: string) => {
