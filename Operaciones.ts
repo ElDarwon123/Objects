@@ -1,4 +1,4 @@
-class Operaciones {
+export default class Operaciones {
     numero1: number
     numero2: number
 
@@ -22,15 +22,4 @@ class Operaciones {
 
 }
 
-let operacion1 = new Operaciones(23, 21)
-let operacion2 = new Operaciones(45, 11)
-let operacion3 = new Operaciones(25, 0)
-let operacion4 = new Operaciones(56, 31)
-let operacion5 = new Operaciones(34, 56)
 
-let list = ["Suma: ",operacion1.getNumero1(), operacion1.getNumero2(), operacion1.suma(),
-    "Resta: ", operacion2.getNumero1(), operacion2.getNumero2(), operacion2.resta(),
-    "Multiplicacion: ", operacion3.getNumero1(), operacion3.getNumero2(),  operacion3.multipicacion(),
-    "Division: ",operacion4.getNumero1(), operacion4.getNumero2(), operacion4.division()]
-
-console.log(list)

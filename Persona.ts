@@ -48,14 +48,9 @@ export default class Persona {
     }
 }
 
-let persona1 = new Persona("Santiago", 20, "1231321983", "direccion1", "Popayan")
-let persona2 = new Persona("Steven", 17, "213216321", "direccion2", "Popayan")
-let persona3 = new Persona("Pilar", 26, "123213414", "direccion3", "So")
-let persona4 = new Persona("Alejandro", 22, "123134543", "direccion4", "Cali")
-let persona5 = new Persona("Daniela", 15, "1231356765", "direccion5", "Alabama")
 
-let info1 = persona1.getInfo()
-console.log(info1)
 
-let edad1 = persona1.esMayor(persona1.edad)
-console.log(edad1)
+
+
+
+ 
